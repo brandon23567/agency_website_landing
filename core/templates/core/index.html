@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<h2>LogoName</h2>
+			</div>
+			<div class="signup_btn_container">
+				<button><a href="{% url 'signup' %}">Sign Up</a></button>
+			</div>
+		</div>
+	</header>
+	<section class="hero_container">
+		<div class="container">
+			<div class="hero_left">
+				<img src="{% static 'imgs/smma3.jpg' %}" class="hero_img">
+			</div>
+			<div class="hero_right">
+				<h2>The only platform your social media agency is ever going to need</h2>
+				<p>
+					We have a saying around here, what good is your smma agency if your own agency sucks at social media right? No worries, this tool is here to help you manage your social media while you focus on your service delivery and aquiring new clients.
+				</p>
+				<button><a href="{% url 'signup' %}">Sign Up</a></button>
+			</div>
+		</div>
+	</section>
+	<section class="about_container">
+		<h2>Why should you give a <span>F</span> about us?</h2>
+		<div class="container">
+			<div class="about_left">
+				<h4>We bring legitimacy to your SMMA agency</h4>
+				<p>
+					Well we help agency owners with manageing their social media accounts. Why? Well, how do you expect other clients to trust you with their social media when your own social media isn't all too special. We make the daunting task of managing all your social accounts as easy as scrolling through tiktok.
+				</p>
+			</div>
+			<div class="about_right">
+				<img src="{% static 'imgs/smma2.jpg' %}" class="about_img">
+			</div>
+		</div>
+	</section>
+	<section class="platforms_container">
+		<h2>Platforms we support</h2>
+		<div class="container">
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/facebook1.jpg' %}" class="platform_img">
+				</div>
+			</div>
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/instagram2.webp' %}" class="platform_img">
+				</div>
+			</div>
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/pinterest1.png' %}" class="platform_img">
+				</div>
+			</div>
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/linkedin2.jpg' %}" class="platform_img">
+				</div>
+			</div>
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/tiktok3.jpg' %}" class="platform_img">
+				</div>
+			</div>
+			<div class="platform">
+				<div class="platform_background">
+					<img src="{% static 'imgs/YouTube-Logo.jpg' %}" class="platform_img">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="pricing_container">
+		<h2>Pricing</h2>
+		<div class="container">
+			<div class="plan">
+				<div class="plan_name">
+					<h2>BASIC</h2>
+				</div>
+				<div class="plan_price">
+					<h4>$5.99/month</h4>
+				</div>
+				<ul class="plan_featues">
+					<li>1 User Account</li>
+					<li>3 Social Media Accounts</li>
+					<li>Posts Scheduling</li>
+				</ul>
+				<div class="plan_signup">
+					<button><a href="{% url 'signup' %}">Sign Up</a></button>
+				</div>
+			</div>
+			<div class="plan">
+				<div class="plan_name">
+					<h2>STANDARD</h2>
+				</div>
+				<div class="plan_price">
+					<h4>$15.99/month</h4>
+				</div>
+				<ul class="plan_featues">
+					<li>5 User Account</li>
+					<li>5 Social Media Accounts</li>
+					<li>Posts Scheduling</li>
+					<li>Analytics</li>
+				</ul>
+				<div class="plan_signup">
+					<button><a href="{% url 'signup' %}">Sign Up</a></button>
+				</div>
+			</div>
+			<div class="plan">
+				<div class="plan_name">
+					<h2>PRO</h2>
+				</div>
+				<div class="plan_price">
+					<h4>$29.99/month</h4>
+				</div>
+				<ul class="plan_featues">
+					<li>10 User Account</li>
+					<li>8 Social Media Accounts</li>
+					<li>Posts Scheduling</li>
+					<li>Analytics</li>
+				</ul>
+				<div class="plan_signup">
+					<button><a href="{% url 'signup' %}">Sign Up</a></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>@Copyright 2023, WebsiteName</p>
+		</div>
+	</footer>
+</body>
+</html>
